@@ -36,7 +36,7 @@ library ECDSA {
         // currently is to use assembly.
         // solhint-disable-next-line no-inline-assembly
         assembly {
-            r := mload(add(signature, 0x20))
+            r := mload(add(signature, 0x20)) //it means skip 1st 16 byte
             s := mload(add(signature, 0x40))
             v := byte(0, mload(add(signature, 0x60)))
         }
