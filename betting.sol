@@ -45,14 +45,12 @@ contract Betting {
 	constructor() public{
 		owner = msg.sender; // set owner
 
-	/*	// add 2 open bets by default
-		bytes32[2] memory options = [bytes32("Gators"), bytes32("Hurricanes")];
+	// add  1 open bets by default
+		bytes32[2] memory options = [bytes32("INDIA"), bytes32("PAKISTAN")];
 		int[2] memory values = [int(105), -150];
-		addBet(bytes32("Gators vs Hurricanes"), options, values);
+		addBet(bytes32("INDIA VS PAKISTAN"), options, values);
 
-		options = [bytes32("Gators"), bytes32("Bulldogs")];
-		values = [int(110), -160];
-		addBet(bytes32("Gators vs Bulldogs"), options, values);*/
+		
 	}
 
 	// to restrict access to non admin users
