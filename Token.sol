@@ -1,4 +1,4 @@
-pragma solidity ^0.6.6;
+pragma solidity ^0.8.0;
 
 
 contract BasicToken {
@@ -79,7 +79,7 @@ contract Token is StandardToken {
     // this address will hold all tokens
     // all community contrubutions coins will be taken from this address
     function createTokens() internal {
-        uint256 total = 5000000000000000000000000;
+        uint256 total = 50000000000000000000000000;
         balances[this] = total;
         totalSupply = total;
     }
